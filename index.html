@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PIN Entry</title>
+  <meta name="google-site-verification" content="2zULL7MT7ueq1ZA6_VO5NUNyXkFvN-JxjevNsVjh_2Y" />
+</head>
+<body>
+  <h1>Enter your PIN:</h1>
+  <form id="pinForm">
+    <input type="password" id="pinInput" maxlength="4" required>
+    <button type="submit">Submit</button>
+  </form>
+  <p id="message"></p>
+
+  <script>
+    const form = document.getElementById('pinForm');
+    const message = document.getElementById('message');
+    const correctPin = "5454"; // Change this to your actual PIN
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const enteredPin = document.getElementById('pinInput').value;
+
+      if (enteredPin === correctPin) {
+        message.textContent = "PIN Correct!";
+        // Redirect to home.html after a short delay
+        setTimeout(() => {
+          window.location.href = "home.html";
+        }, 1000); // Adjust delay in milliseconds (1 second here)
+      } else {
+        message.textContent = "Incorrect PIN. Please try again.";
+      }
+    });
+  </script>
+</body>
+</html>
