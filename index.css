@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(165, 169, 255);
+    cursor: pointer;
+}
+.welcome {
+    text-align: center;
+    direction: rtl;
+}
+.btn{
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+}
+.logo {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
