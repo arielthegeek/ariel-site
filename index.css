@@ -10,9 +10,21 @@ body {
     display: block;
     width: 150px;
     margin: 0 auto;
+    background-color: black;
+    color: white;
+}
+.btn:hover {
+    background-color: white;
+    color: black;
 }
 .logo {
     width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+#white.logo {
+    width: 400px;
     height: 100px;
     display: block;
     margin: 0 auto;
