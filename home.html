@@ -3,40 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ariel.com</title>
-    <link rel="stylesheet" href="index.css">
-    <script>
-        window.addEventListener("load", () => {
-        document.querySelector(".loader").classList.add("loader--hidden");
-        });
-    </script>
+    <title>Ariel Corporations</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1 class="welcome">ברוכים הבאים לאתר "Ariel.com". כאן תוכלו להיכנס לאתרים אשר תוכנתו על ידי</h1>
-    <br>
-    <p class="welcome">!כל האתרים הם בדיחה ולא רציניים, נא לא להעביר פרטים חשובים</p>
-    <p class="welcome">all site's here are a joke and may not be used as a real site, please do not share sensitive information!</p>
-    <br>
-    <a href="https://bit.ly/saksistein" target="_blank">
-        <button class="btn">זקסישטיין האתר הרשמי</button>
-    </a>
-    <img class="logo" src="pics/סמל (עומד).png" alt="saksistein logo">
-    <br>
-    <a href="https://arielcorporations.github.io/HackerTyper" target="_blank">
-        <button class="btn">Hacker Typer-האקר טייפר</button>
-    </a>
-    <img class="logo" id="white" src="white-logo.png" alt="">
-    <br>
-    <a href="bot_setup.exe" target="_parent"><button class="btn">download chatbot</button></a>
-    <img class="logo" src="pics/Gemini_Generated_Image.ico" alt="">
-    <br>
-    <a href="Horizon_browser.exe" target="_parent"><button class="btn">download Horizon browser</button></a>
-    <img class="logo" src="pics/Horizon Browser logo.ico" alt="browser logo">
-    <br>
-    <a href="Snake.zip" target="_parent"><button class="btn">download Snake</button></a>
-    <img class="logo" src="pics/logo.ico" alt="snake logo">
-    <br>
-    <p class="welcome">אנחנו עובדים על עוד, תחזרו מאוחר יותר</p>
-    <p class="welcome">we're still working on more, come back later</p>
+    <header>
+        <div class="logo">Ariel Corporations</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Welcome to Ariel Corporations</h1>
+        <p>Your destination for innovative software solutions.</p>
+    </section>
+
+    <section id="products" class="app-store">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <h3>Product 1</h3>
+                <p>Description of Product 1</p>
+                <a href="product1.html">View Details</a>
+            </div>
+            <div class="product-item">
+                <h3>Product 2</h3>
+                <p>Description of Product 2</p>
+                <a href="product2.html">View Details</a>
+            </div>
+            <!-- More products here -->
+        </div>
+    </section>    
+
+    <section id="links" class="links-section">
+        <h2>Related Links</h2>
+        <ul>
+            <li><a href="#">Link to Website 1</a></li>
+            <li><a href="#">Link to Website 2</a></li>
+            <!-- More links here -->
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ariel Corporations. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
 </body>
 </html>
