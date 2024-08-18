@@ -1,50 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-V07CSFSJ0C"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-V07CSFSJ0C');
-</script>
-  <title>PIN Entry</title>
-  <meta name="google-site-verification" content="2zULL7MT7ueq1ZA6_VO5NUNyXkFvN-JxjevNsVjh_2Y" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ariel Corporations</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Enter your PIN:</h1>
-  <form id="pinForm">
-    <input type="password" id="pinInput" maxlength="4" required>
-    <button type="submit">Submit</button>
-  </form>
-  <p id="message"></p>
+    <header>
+        <div class="logo">Ariel Corporations</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Products</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <a href="login.html">
-    <button type="button">Sign in/Sign up using Ariel corporations authenticator app</button>
-  </a>
+    <section id="home" class="hero">
+        <h1>Welcome to Ariel Corporations</h1>
+        <p>Your destination for innovative software solutions.</p>
+    </section>
 
+    <section id="products" class="app-store">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <h3>snake</h3>
+                <p>משחק סנייק קלאסי</p>
+                <a href="product1.html">לפרטים</a>
+            </div>
+            <div class="product-item">
+                <h3>chatbot</h3>
+                <p>בוט שלומד ממך איך לדבר</p>
+                <a href="product2.html">לפרטים</a>
+            </div>
+            <div class="product-item">
+                <h3>Horizon Browser</h3>
+                <p>נמאס לכם מגוגל קרום? התקדמו עוד היום להורייזון</p>
+                <a href="product3.html">לפרטים</a>
+            </div>
+        </div>
+        </div>
+    </section>    
 
-  <script>
-    const form = document.getElementById('pinForm');
-    const message = document.getElementById('message');
-    const correctPin = "5454"; // Change this to your actual PIN
+    <section id="links" class="links-section">
+        <h2>Related Links</h2>
+        <ul>
+            <li><a href="http://bit.ly/saksistein" target="_blank">זקסישטיין האתר הרשמי</a></li>
+            <li><a href="http://arielcorporations.github.io/HackerTyper" target="_blank">Hacker Typer</a></li>
+            <!-- More links here -->
+        </ul>
+    </section>
 
-    form.addEventListener('submit', (event) => {
-      event.preventDefault();
-      const enteredPin = document.getElementById('pinInput').value;
-
-      if (enteredPin === correctPin) {
-        message.textContent = "PIN Correct!";
-        // Redirect to home.html after a short delay
-        setTimeout(() => {
-          window.location.href = "home.html";
-        }, 1000); // Adjust delay in milliseconds (1 second here)
-      } else {
-        message.textContent = "Incorrect PIN. Please try again.";
-      }
-    });
-  </script>
+    <footer>
+        <p>&copy; 2024 Ariel Corporations. All rights reserved.</p>
+    </footer>
 </body>
-</html> 
+</html>
