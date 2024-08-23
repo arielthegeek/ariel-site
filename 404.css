@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #0e0e0e;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    font-size: 10rem;
+    font-weight: bold;
+    position: relative;
+}
+
+.message {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.glitch-effect {
+    position: relative;
+    display: inline-block;
+}
+
+.glitch {
+    position: absolute;
+    font-size: 5rem;
+    top: 0;
+    left: 0;
+    color: #00ffea;
+    background: #0e0e0e;
+    animation: glitch 1.5s infinite linear;
+}
+
+.glitch:nth-child(2) {
+    color: #ff005a;
+    animation: glitch 1.5s infinite linear reverse;
+}
+
+.glitch:nth-child(3) {
+    color: #00a1ff;
+    animation: glitch 2s infinite linear;
+}
+
+.back-home-btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #0e0e0e;
+    background: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.back-home-btn:hover {
+    background: #00ffea;
+}
+
+@keyframes glitch {
+    0% { transform: translate(0); }
+    20% { transform: translate(-5px, 5px); }
+    40% { transform: translate(5px, -5px); }
+    60% { transform: translate(-5px, -5px); }
+    80% { transform: translate(5px, 5px); }
+    100% { transform: translate(0); }
+}
